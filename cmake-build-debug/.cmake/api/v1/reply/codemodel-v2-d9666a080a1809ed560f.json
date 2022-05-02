@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/CLionProjects/Recursion/cmake-build-debug",
-		"source" : "D:/CLionProjects/Recursion"
+		"build" : "C:/Users/abdal/CLionProjects/Recursion-using-stack/cmake-build-debug",
+		"source" : "C:/Users/abdal/CLionProjects/Recursion-using-stack"
 	},
 	"version" : 
 	{

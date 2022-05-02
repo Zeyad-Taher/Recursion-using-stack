@@ -1,4 +1,4 @@
-ToolSet: w64 9.0 (local)@C:\Users\Zeyad\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\mingw
+ToolSet: w64 9.0 (local)@C:\Program Files\JetBrains\CLion 2021.3\bin\mingw
 Options: 
 
-Options:-DCMAKE_MAKE_PROGRAM=C:/Users/Zeyad/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/ninja/win/ninja.exe
+Options:
