@@ -62,6 +62,8 @@ int FIterative(int n)
             //First it is called from a
             if (currentCall.callerName == CALLER_A)
             {
+
+                //In this case return variable is returned to variable a of the call 2 times below current
                 FCall& c2 = s.top();
                 s.pop();
                 FCall& c3 = s.top();
@@ -71,9 +73,12 @@ int FIterative(int n)
             //Second it is called from b
             if (currentCall.callerName == CALLER_B)
             {
+                //In this case return variable is returned to variable b of the call 1 time below current
                 FCall& c2 = s.top();
                 c2.b = c2.n * currentCall.returnVar;
                 c2.c = c2.n - 2 - (c2.a + c2.b) % 2;
+
+                //A new call is pushed which will be returned to d `f(c)`
                 FCall call3(c2.c, CALLER_D);
                 s.push(call3);
 
@@ -81,6 +86,7 @@ int FIterative(int n)
             //Third it is called from d
             if (currentCall.callerName == CALLER_D)
             {
+                //In this case return variable is returned to variable d of the current call
                 FCall& c1 = s.top();
                 c1.d = currentCall.returnVar;
                 c1.returnVar = c1.a + c1.b + c1.d;
